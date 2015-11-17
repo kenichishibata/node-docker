@@ -1,0 +1,14 @@
+{
+  "name": "template-node-project",
+  "version": "0.0.0",
+  "description": "use this to start the project made by fastretailing FRIT JP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata31.github.io)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
