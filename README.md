@@ -12,7 +12,7 @@ Docker images repository to make prebuilt environment using centos base and then
 
 4. Clone this repo in your local machine
 
-5. Go to the desired image and then run **docker build -t (image name) .**
+5. Go to the desired image and then run **docker build -t (image name):(version|latest) .**
 
 6. Run **docker images** to see if the docker image was built properly
 
