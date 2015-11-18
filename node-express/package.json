@@ -1,14 +1,18 @@
 {
   "name": "template-node-project",
   "version": "0.0.0",
-  "description": "use this to start the project made by fastretailing FRIT JP",
+  "description": "use this to start the project made by fastretailing FRIT JP add promises library and gulp or grunt task manager",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata31.github.io)",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
-  }
+    "express": "^4.13.3",
+    "bunyan": "^0.22.1",
+    "node-config-manager": "^1.0.2"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.2.10"
+  },
 }
