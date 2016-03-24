@@ -27,6 +27,8 @@ RUN cd /app; npm install
 COPY . /app
 
 # Get forever
+RUN  npm install -g karma-cli
+RUN  npm install -g karma
 RUN  npm install -g forever
 
 EXPOSE  8080
