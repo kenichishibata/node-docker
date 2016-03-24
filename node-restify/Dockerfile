@@ -3,9 +3,8 @@ FROM centos
 # Update ec2 instance
 RUN yum update -y
 
-# Enable Extra Packages for Enterprise Linux (EPEL) for CentOS
-RUN     yum install -y epel-release
 # Install Node.js and npm
+RUN     curl --silent --location https://rpm.nodesource.com/setup_5.x | bash -
 RUN     yum install -y nodejs npm
 # Install Git
 # RUN yum groupinstall -y "Development Tools" (super big complete dev tools)
@@ -30,6 +29,8 @@ COPY . /app
 RUN  npm install -g karma-cli
 RUN  npm install -g karma
 RUN  npm install -g forever
+RUN  npm install -g n
+RUN  n 5.6
 
 EXPOSE  8080
 
