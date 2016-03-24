@@ -5,7 +5,7 @@ RUN yum update -y
 
 # Install Node.js and npm
 RUN     curl --silent --location https://rpm.nodesource.com/setup_5.x | bash -
-RUN     yum install -y nodejs npm
+RUN     yum install -y nodejs 5.5
 # Install Git
 # RUN yum groupinstall -y "Development Tools" (super big complete dev tools)
 
@@ -29,8 +29,6 @@ COPY . /app
 RUN  npm install -g karma-cli
 RUN  npm install -g karma
 RUN  npm install -g forever
-RUN  npm install -g n
-RUN  n 5.6
 
 EXPOSE  8080
 
